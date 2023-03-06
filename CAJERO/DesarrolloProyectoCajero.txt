@@ -1,0 +1,29 @@
+DESCRIPCION DEL PROYECTO CAJERO
+
+1. Crear la carpeta del proyecto
+2. creear los documentos de trabajo
+a. html
+b. css
+c. js
+3. Diseñar la pantalla de login, para eso cree el archvo en html con dos input tipo numero para ingresar el usuario o el administraddor y un input tipo password para ingresar la contraseña y un boton tipo con el nombre ingresar.
+Acada uno de los input y button se les asigno una clase y un id para darle los estilos en el archivo de css.
+4 Crear el formulario de usuarios y administradores.
+
+
+5. Procedi a darle diseño a los botones para eso utilice como material de apoyo pagina de youtube y los siguientes documentos
+
+-
+-
+-
+
+6 cree una tabla de usuarios sencillas en HTML con tres etiquetas: <table> para crear la tabla, 
+<tr> para crear cada fila y <td> para crear cada columna. 
+La etiqueta <table> encierra todas las filas y columnas de la tabla.
+estructura 
+<table>
+	<tr>
+		<td>
+		</td>
+	</tr>
+
+</table>

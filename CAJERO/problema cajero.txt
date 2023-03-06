@@ -1,0 +1,16 @@
+/*El aplicativo debe cumplir con los siguientes requerimiento técnicos:
+1. Escribir una lista de usuarios con los siguientes datos: nombre, número de documento, contraseña y tipo de usuario. 
+El tipo usuario será: 1: administrador, 2: Cliente. Guardarla en un array de objetos*/
+
+/* 2. Realizar un programa que al inicio solicite ingresar documento y contraseña, 
+si el usuario no existe debe indicar que no existe y volver a preguntar al usuario y contraseña. 
+Si el usuario es administrador, debe permitir ccargar el cajero de la siguiente manera:*/
+
+/*3 solicitar la cantidad de billetes de 5, 10, 50 y 100 mil pessos CoP*/
+/*4 Almacenar esta informacion en un array de objetos.*/
+/*5 mostrar en consola la suma por cada denominacion y el total general*/
+6 vovler a solicitar usuario y contraseña, si es administrador, se repite el mismo proceso sumar a la cantidad actual,
+si es cliente debe proseguir el la siguiente manera:
+7 si el cajero no tiene dinero cargado, debe aparecer un mensaje en consola: cajero en mantenimiento, vuelva pronto.
+y reiniciar desde el inicio
+8 si el cajero ya tiene dinero cargado, debe preguntar la cantidad deseada a retirar una 
