@@ -1,7 +1,24 @@
 DESCRIPCION DEL PROYECTO CAJERO
 
-1. Crear la carpeta del proyecto
-2. creear los documentos de trabajo
+1. Cree un objeto de usuarios llamado arrayUser con 3 objetos, el primero es tipo 1 osea administrador y los otros dos como clientes 
+2. Cree tres variables documento, password y usuarios, las ddos primeras para ser llenadas por pantalla mediante un pront
+la ultima usuarios para hacer las validaciones correspondientes tomando la key del array de usuarios para ingresar.
+3. cree una variable con la lista de billetes inicializandolos en ceros para ser llenados posteriormente por pantalla
+4. Dentro de un ciclio infinito creado con la condicional whiile encerre todo el codigo para que siempre se le este pregutando al que utilice el codigo los datos de ingreso 
+5. La primera validacion que realice es saber si el usuario exite o no dentro del arreglo de usuarios. Esta validación se hizo con la condicionaol if.
+6. Si el usuario no existe se saca un mensaje diciendo que debe ingresar un usuario valido.
+7. Si al contrario el usuario existe se procede dependiendo el tipo de usuario si es administrador o cliente para esto utilice la condicional switch case.
+8. la opcion 1 del switch coloque las opciones del administrador del administrador que le permite ingresar la ccantidad de denominaciones de billetes de 100, 50, 10 o 5000 que desea ingresar.
+9. esta opcion de ingresar la hice dentro del ciclo for para ir sumando la cantidad de billetes que el administrador va ingresando cada que ingrese al cajero. 
+10. De igual manera se va sumando el valor total de los billetes ingresados para saber el valor total existente en el cajero 
+11. En el caso 2 del switch case coloque todas las validaciones del usurio tipo 2 osea del cliente.
+12. Desde alli partí de las siguietes opciones:
+13. Primero  si el cajero no tiene dinero saca un mensaje se saca un mensaje diciendo que el cajero esta en mantenimiento.
+14. si el cajero tiene disponibilidad de dinero se pregunta el valor del dinero a retirar y se le entrega al usuario descontando el valor por cada denominacion
+
+
+
+los documentos de trabajo
 a. html
 b. css
 c. js
