@@ -18,12 +18,9 @@ const loadVideos = (container, videoList) => {
                 src=${video.image} alt=${video.name}>
             </figure>
             <div class="flex-div">
-                <figure>
-                    <img src=${video.image}>
-                </figure>
-                <h3 class="cards__name" data-card='cards' name=${video.id}>${video.name}</h3>
-            </div> 
-            <p class="cards__views" name=${video.id}>${video.cantViews}</p>           
+                <h3 data-card='cards' name=${video.id}>${video.name}</h3>
+                <p  class="cards__views" name=${video.id}>${video.cantViews} </p>
+            </div>       
         </article>
         `;
   });
@@ -41,7 +38,7 @@ document.addEventListener("click", (event) => {
   if (dataCardAttribute === "cards") {
     const id = event.target.getAttribute("name");
     sessionStorage.setItem("idVideo", JSON.stringify(id));
-    window.location.href = "./pages/details.html";
+    window.location.href = "../pages/details.html";
   }
 });
 
@@ -71,57 +68,3 @@ categories.forEach((item) => {
 });
 
 //-----------------------------------------
-
-//---------Búsqueda de personajes por nombre..
-
-const filterByName = (termSearch, videoList) => {
-  const videosFiltrados = videoList.filter((person) =>
-    person.name.toLowerCase().includes(termSearch.toLowerCase())
-  );
-  const result = videosFiltrados.length
-    ? videosFiltrados
-    : videoList;
-
-  const messageResult = videosFiltrados.length
-    ? false
-    : "No existe este video";
-
-  return {
-    resultSearch: result,
-    messageSearch: messageResult,
-  };
-};
-
-const formSearch = document.querySelector(".search-bar");
-
-formSearch.addEventListener("submit", (e) => {
-  e.preventDefault();
-
-  console.log(formSearch.children);
-
-  const formChildren = Array.from(formSearch.children);
-
-  const inputSearch = formChildren.find((item) => item.localName === "input");
-
-  console.log(inputSearch.value);
-
-  const searchTerm = inputSearch.value;
-
-  if (searchTerm) {
-
-    const searchResult = filterByName(searchTerm, characters);
-
-    console.log(searchResult);
-
-    printVideos(containerVideos, searchResult.resultSearch);
-
-    if (searchResult.messageSearch) {
-
-      Swal.fire("Oops!", searchResult.messageSearch, "error");
-    }
-  } else {
-
-    Swal.fire("Oops!", "No ingresaste un video", "error");
-  }
-});
-

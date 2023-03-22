@@ -45,21 +45,30 @@
         <form id="form">
             <label for="name">Name Video</label>
             <input id="name" type="text" placeholder="Ingrese el nombre del video">
+            
             <label for="image">Imagen Video</label>
-            <input type="text" id="image" placeholder="Ingrese la Imagen del Video">
+            <input type="image" id="image" placeholder="Ingrese la Imagen del Video">
+            
             <label for="category">Categoría</label>
             <select id="category">
                 <option value="">Seleccione un opción</option>
-                <option value="Film">Musica</option>
-                <option value="Tv Series">Programacion</option>
-                <option value="Tv Series">Peliculas</option>
+                <option value="musica">Musica</option>
+                <option value="programacion">Programacion</option>
+                <option value="peliculas">Peliculas</option>
             </select>
-            <label for="title">Name Autor</label>
-            <input type="text" id="title" placeholder="Ingrese el nombre del autor del Video">
-            <label for="year">Link Video</label>
-            <input type="number" id="year" placeholder="Ingrese la url del video">
-            <label for="duration">Cantidad de visitas</label>
-            <input type="number" id="duration" placeholder="Ingrese la cantidad de visitas">
+            
+            <label for="author">Name Autor</label>
+            <input type="text" id="author" placeholder="Ingrese el nombre del autor del Video">
+
+            <label for="imgAuthor">Imagen Autor</label>
+            <input type="image" id="imgAuthor" placeholder="Ingrese la Imagen del Video">
+            
+            <label for="video">Link Video</label>
+            <input type="number" id="video" placeholder="Ingrese la url del video">
+            
+            <label for="cantViews">Cantidad de visitas</label>
+            <input type="number" id="cantViews" placeholder="Ingrese la cantidad de visitas">
+            
             <button type="submit">Crear Video</button>
         </form>
     </main>

@@ -1,9 +1,9 @@
-import { listVideo } from "./data.js";
+import { listVideos } from "../scripts/data.js";
 
-// const video =
-//   JSON.parse(sessionStorage.getItem("characters")) || listVideo;
+const videos =
+  JSON.parse(sessionStorage.getItem("videos")) || listVideos;
 
-// //------Escuchar el click del logo de la página para que redireccione a la página principal-----
+//------Escuchar el click del logo de la página para que redireccione a la página principal-----
 
 // const logo = document.querySelector(".header__image");
 
@@ -11,90 +11,92 @@ import { listVideo } from "./data.js";
 //   window.location.href = "../index.html";
 // });
 
-// //-----------------Activamos el enlace----------------------------------------
+//-----------------Activamos el enlace----------------------------------------
 
 // const linkActive = document.querySelector(".header__link");
 // linkActive.classList.add("active");
 // console.log(linkActive.classList);
 
-// //---------------------------------------
+//---------------------------------------
 
-// const form = document.getElementById("form");
+const form = document.getElementById("form");
 
-// form.addEventListener("submit", (e) => {
-//   e.preventDefault();
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
 
-//   const formChildren = Array.from(form.children);
+  const formChildren = Array.from(form.children);
 
-//   const arrayInput = formChildren.filter(
-//     (item) => item.localName === "input" || item.localName === "select"
-//   );
+  const arrayInput = formChildren.filter(
+    (item) => (item.localName === "input" || item.localName === "select")
+  );
 
-//   const newCharacter = {
-//     name: "",
-//     image: "",
-//     seenIn: {
-//       category: "",
-//       title: "",
-//       year: "",
-//       duration: "",
-//     },
-//   };
+  const newVideo = {
+    name: "" ,
+    image: "" ,
+    video: "",
+    author: "",
+    imgAuthor: "",
+    cantViews: "",
+    seenIn: {
+        category: "", 
+    },
+  };
 
-//     for (const key in newCharacter) {
-//       if (typeof newCharacter[key]=== 'object') {
-//           for (const propertyName in newCharacter[key]) {
-//               const input =  arrayInput.find(item=> item.id == propertyName)
-//               newCharacter[key][propertyName] = input.value 
-//         }
-//       } else {
-//           const input = arrayInput.find((item) => item.id == key);
-//           newCharacter[key] = input.value; 
-//       }
-//     }
+    for (const key in newVideo) {
+      if (typeof newVideo[key]=== 'object') {
+          for (const propertyName in newVideo[key]) {
+              const input =  arrayInput.find(item=> item.id == propertyName)
+              newVideo[key][propertyName] = input.value 
+        }
+      } else {
+          const input = arrayInput.find((item) => item.id == key);
+          newVideo[key] = input.value; 
+      }
+    }
     
-//     console.log(newCharacter);
-//     const validateCampos = validateInputs(newCharacter);
-//     if (validateCampos) {
 
-//         newCharacter.id = characters.length + 1;
+    console.log(newVideo);
+    const validateCampos = validateInputs(newVideo);
+    if (validateCampos) {
 
-//         characters.push(newCharacter);
+        newVideo.id = videos.length + 1;
 
-//         sessionStorage.setItem("characters", JSON.stringify(characters));
+        videos.push(newVideo);
 
-//         Swal.fire("Buen trabajo!", "El nuevo personaje fue creado exitosamente", "success");
+        sessionStorage.setItem("videos", JSON.stringify(videos));
+
+        Swal.fire("Buen trabajo!", "El nuevo personaje fue creado exitosamente", "success");
         
-//         form.reset();
-//     }
-//     console.log(characters);
-// });
+        form.reset();
+    }
+    console.log(listVideos);
+});
 
 
-// const validateInputs = (objetoData) => {
-//     let camposVacios = "";
-//     for (const key in objetoData) {
+const validateInputs = (objetoData) => {
+    let camposVacios = "";
+    for (const key in objetoData) {
 
-//         if (typeof objetoData[key] === "object") {
+        if (typeof objetoData[key] === "object") {
 
-//             for (const propertyName in objetoData[key]) {
+            for (const propertyName in objetoData[key]) {
 
-//                 const valueProperty = objetoData[key][propertyName]
+                const valueProperty = objetoData[key][propertyName]
                 
-//                 camposVacios += !valueProperty ? `${propertyName} ` : "";
+                camposVacios += !valueProperty ? `${propertyName} ` : "";
 
-//           }
-//         } else {
-//             const valueProperty = objetoData[key];
-//             camposVacios += !valueProperty ? `${key} `: "";
-//       }
-//     }
+          }
+        } else {
+            const valueProperty = objetoData[key];
+            camposVacios += !valueProperty ? `${key} `: "";
+      }
+    }
 
-//     if (camposVacios) {
-//         Swal.fire("Oops!", `Hay campos vacíos: ${camposVacios}`, "error");
-//         return false;
-//     } else {
-//         return true;
-//     }
+    if (camposVacios) {
+        Swal.fire("Oops!", `Hay campos vacíos: ${camposVacios}`, "error");
+        return false;
+    } else {
+        return true;
+    }
     
-// }
+}

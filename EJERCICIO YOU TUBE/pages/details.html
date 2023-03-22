@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../styles/details.css">
+    <link rel="stylesheet" href="../styles/details.css" />
     <title>Detalles del video</title>
   </head>
   <body>
@@ -42,9 +42,22 @@
       </nav>
     </header>
     <main class="main">
-      <h1 id="titleVideo">Página de detalles</h1>
-      <article id="information"></article>
+
+      <section id="information" class="main__seccion__title">
+        <h1 id="titleVideo">Página de detalles</h1>
+      </section>
+
+      <div class="main__div_sugeridos">
+        <div class="main__buttons">
+          <button name="all">Todos</button>
+          <button name="musica">Musica</button>
+          <button id="button_programacion" name="programacion">Programación</button>
+          <button name="peliculas">Peliculas</button>
+        </div>
+        <section class="main_videos"></section>
+      </div>
     </main>
-      <script src="../scripts/details.js" type="module"></script>
+    <script src="../scripts/details.js" type="module"></script>
+    <script src="../scripts/sugeridos.js" type="module"></script>
   </body>
 </html>

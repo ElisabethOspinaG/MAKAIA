@@ -2,7 +2,7 @@ export const listVideos = [
     {
         id: 1,
         name: "Pokemon Api",
-        image: "./img/img1.png",
+        image: "../img/img1.png",
         video: "https://www.youtube.com/embed/vI9d8lnH4dE",
         author: "Leonidas Esteban",
         imgAuthor: "./img/Avatar1.png",
@@ -15,7 +15,7 @@ export const listVideos = [
     {
         id: 2,
         name: "Los mejores atajos de teclado en Visual Studio Code",
-        image: "./img/img2.png",
+        image: "../img/img2.png",
         video: "https://www.youtube.com/embed/k_r5Kh4wptQ",
         author: "Leonidas Esteban",
         imgAuthor: "./img/avatar2.png",
@@ -28,7 +28,7 @@ export const listVideos = [
     {
         id: 3,
         name: "La evolución del layout en CSS",
-        image: "./img/img3.png",
+        image: "../img/img3.png",
         video: "https://www.youtube.com/embed/g3RKFBbROjk",
         author: "Leonidas Esteban",
         imgAuthor: "./img/avatar3.png",
