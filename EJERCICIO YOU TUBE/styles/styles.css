@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Poppins:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #181818;
+}
+body {
+    padding: 0 50px;
+    font-family: "poppins";
+}
+
+/* nav */
+.header__nav{
+    display: flex;
+    padding: 10px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__figure img{
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+}
+
+.header__titleLogo{
+    width: 140px;
+    height: 39px;
+    font-family: Impact;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    order: 1;
+    line-height: 39px;
+    flex-wrap: 0;
+    flex: none;
+    color: #ffffff;
+    align-items: center;
+}
+
+.div__nav{
+    display: flex;
+    align-items: center;
+    flex-grow: 0;
+}
+
+.header__list{
+    display: flex;
+    list-style: none;
+    
+    gap: 20px;
+}
+
+.header__list img{
+    width: 45px;
+    height: 40px;    
+}
+
+.header__list li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.header__list li a:hover{
+    font-weight: 800;
+}
+
+.search-bar{
+    border: solid 1px #ccc;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 20px;
+    margin: auto;
+}
+
+ .search-bar:focus-within{
+    border: solid 1px #aaa;
+    box-shadow: 0px 2px 5px rgba(35, 35, 36, 0.2);
+}
+
+.search-bar input{
+    border: none;
+    outline: none;
+    color: #ccc;
+    pad: 10px;
+    font-size: 16px;
+    flex: auto;
+}
+
+.search-bar .actions{
+    display: flex;
+    gap: 10px;
+}
+
+.search-bar .actions button{
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    color: #aaa;
+}
+
+.search-bar .actions button:hover{
+    color: #2979e2;
+    text-decoration-color: #aaa;
+}
+
+
+/* buttons */
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: justify;
+    gap: 25px;
+}
+
+.main__buttons{
+    display: flex;
+    gap: 20px;
+}
+
+.main__buttons button:hover{
+    background-color: #6F6F6F;
+    color: #ffffff;
+}
+
+.main__buttons button{
+    width: 81px;
+    height: 40px;
+    top: 16px;
+    left: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+    gap: 10px;
+    background: #FFFFFF;
+    border: 1px solid #6F6F6F;
+    border-radius: 44px;
+    cursor: pointer;
+    order: 0;
+    flex-grow: 0;
+    gap: 10px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+#button_programacion{
+    width: 147px;
+    height: 40px;
+}
+
+
+
+/* section */
+.main_videos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-column-gap: 16px;
+    grid-row-gap: 30px;
+    margin-top: 15px;
+}
+
+.cards .cards__image {
+    width: 100%;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.cards .flex-div{
+    display: flex;
+    flex-direction: row;
+    margin-top: 7px;
+}
+
+.cards .flex-div img{
+    width: 35px;
+    margin-right: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.cards__name{
+    color: #cfcfcf;
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    cursor: pointer;
+}
+
+.cards__views{
+    color: #aaa;
+    margin-left: 45px;
+    margin-top: 6px;
+    font-size: 13px;
+}
+
+
+@media screen and (max-width: 600px){
+    .header__nav{
+        flex-direction: column;
+    }
+}

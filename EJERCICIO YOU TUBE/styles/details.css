@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Poppins:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #181818;
+}
+body {
+    padding: 0 50px;
+    font-family: "poppins";
+    color: #fff;
+
+}
+
+/* nav */
+.header__nav{
+    display: flex;
+    padding: 10px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__figure img{
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+}
+
+.header__titleLogo{
+    width: 140px;
+    height: 39px;
+    font-family: Impact;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    order: 1;
+    line-height: 39px;
+    flex-wrap: 0;
+    flex: none;
+    color: #ffffff;
+    align-items: center;
+}
+
+.div__nav{
+    display: flex;
+    align-items: center;
+    flex-grow: 0;
+}
+
+.header__list{
+    display: flex;
+    list-style: none;
+    
+    gap: 20px;
+}
+
+.header__list img{
+    width: 45px;
+    height: 40px;    
+}
+
+.header__list li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.header__list li a:hover{
+    font-weight: 800;
+}
+
+.search-bar{
+    border: solid 1px #ccc;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 20px;
+    margin: auto;
+}
+
+ .search-bar:focus-within{
+    border: solid 1px #aaa;
+    box-shadow: 0px 2px 5px rgba(35, 35, 36, 0.2);
+}
+
+.search-bar input{
+    border: none;
+    outline: none;
+    color: #ccc;
+    pad: 10px;
+    font-size: 16px;
+    flex: auto;
+}
+
+.search-bar .actions{
+    display: flex;
+    gap: 10px;
+}
+
+.search-bar .actions button{
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    color: #aaa;
+}
+
+.search-bar .actions button:hover{
+    color: #2979e2;
+    text-decoration-color: #aaa;
+}
