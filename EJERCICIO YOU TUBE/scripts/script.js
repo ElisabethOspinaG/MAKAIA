@@ -29,7 +29,7 @@ const loadVideos = (container, videoList) => {
   });
 };
 
-//3. Vamos a escuchar al evento DomContentLoad y cuando suceda este evento se deben imprimir los personajes
+//3. Vamos a escuchar al evento DomContentLoad (recargar la pagina) y cuando suceda este evento se deben imprimir los personajes
   document.addEventListener("DOMContentLoaded", () => {
   loadVideos(containerVideos, videos);
 });
@@ -37,6 +37,7 @@ const loadVideos = (container, videoList) => {
 //4. Vamos a escuchar el evento click sobre las cards
 document.addEventListener("click", (event) => {
 
+  //event.target indica la etiqueta a la cual le hemos dado click pafra que nos captura el atributo a la cual le dado click
   const dataCardAttribute = event.target.getAttribute("data-card");
   if (dataCardAttribute === "cards") {
     const id = event.target.getAttribute("name");
@@ -109,11 +110,11 @@ formSearch.addEventListener("submit", (e) => {
 
   if (searchTerm) {
 
-    const searchResult = filterByName(searchTerm, characters);
+    const searchResult = filterByName(searchTerm, videos);
 
     console.log(searchResult);
 
-    printVideos(containerVideos, searchResult.resultSearch);
+    loadVideos(containerVideos, searchResult.resultSearch);
 
     if (searchResult.messageSearch) {
 
