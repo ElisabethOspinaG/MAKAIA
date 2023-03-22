@@ -1,47 +1,73 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
 * {
-  margin: 10px;
+  margin: 5px;
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  padding: 0 50px;
+  padding: 5px;
   font-family: "Open Sans";
+}
+/* ESTILOS DEL NAV */
+.header__titleLogo {
+  width: 140px;
+  height: 39px;
+  font-family: Impact;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  order: 1;
+  line-height: 39px;
+  flex-wrap: 0;
+  flex: none;
+  color: #000;
+  align-items: center;
+}
+.div__nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 0;
 }
 
 .header__nav {
   display: flex;
-  padding: 0;
   justify-content: space-between;
   align-items: center;
-  background-color: black;
 }
 
 .header__figure img {
-  width: 85px;
+  width: 48px;
+  height: 48px;
   cursor: pointer;
-}
-
-.header__div__figure{
-    display: flex;
-    align-items: center
 }
 .header__list {
   display: flex;
   list-style: none;
-  gap: 10px;
+  font-family: Impact;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  border: solid 1px #ccc;
+  border-radius: 30px;
+}
+
+.header__list img {
+  width: 45px;
+  height: 40px;
 }
 
 .header__list li a {
-  color: black;
+  color: #ac0404;
   text-decoration: none;
+  
 }
 
 .header__list li a:hover {
   font-weight: 800;
 }
+/* ESTILOS DEL FORMULARIO */
 
 .active {
   color: blue !important;
@@ -59,9 +85,10 @@ body {
   font-weight: 700;
 }
 
-#form input, #form select {
+#form input,
+#form select {
   padding: 5px 10px;
-  border-radius: 5px;
+  border-radius: 10px;
   width: 300px;
 }
 
@@ -79,8 +106,6 @@ body {
   background-color: black;
   color: #fff;
 }
-
-
 
 @media screen and (max-width: 600px) {
   .header__nav {
