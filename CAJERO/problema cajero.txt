@@ -9,8 +9,12 @@ Si el usuario es administrador, debe permitir ccargar el cajero de la siguiente 
 /*3 solicitar la cantidad de billetes de 5, 10, 50 y 100 mil pessos CoP*/
 /*4 Almacenar esta informacion en un array de objetos.*/
 /*5 mostrar en consola la suma por cada denominacion y el total general*/
-6 vovler a solicitar usuario y contraseña, si es administrador, se repite el mismo proceso sumar a la cantidad actual,
-si es cliente debe proseguir el la siguiente manera:
-7 si el cajero no tiene dinero cargado, debe aparecer un mensaje en consola: cajero en mantenimiento, vuelva pronto.
-y reiniciar desde el inicio
-8 si el cajero ya tiene dinero cargado, debe preguntar la cantidad deseada a retirar una 
+/*6 vovler a solicitar usuario y contraseña, si es administrador, se repite el mismo proceso sumar a la cantidad actual,
+si es cliente debe proseguir el la siguiente manera:*/
+/*7 si el cajero no tiene dinero cargado, debe aparecer un mensaje en consola: cajero en mantenimiento, vuelva pronto.
+y reiniciar desde el inicio*/
+/*8 si el cajero ya tiene dinero cargado, debe preguntar la cantidad deseada a retirar.
+Una vez optenida la información, debe indicar cuanto dinero puede entregar basado en la cantidad dispinible y los tipos de billetes.
+luego debe mostar en consola cuantos billetess de cada denominación entregó.
+Priorizando siempre las denominaciones más altas para valoress altos y redondeando a la cifra cercana menor a la solicitada.*/
+/*9. posteriormente, debe aparecer en consola, el dinero restante en el cajero, por cada denominación.

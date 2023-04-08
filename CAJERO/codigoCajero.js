@@ -154,10 +154,7 @@ while (true) {//ciclo infinito
                                     }
                                 }
                             });
-                            let cantBilletes100 = valorRetirar
-                            alert("aqui voy");
                         }
-
                     }
                 }
         }

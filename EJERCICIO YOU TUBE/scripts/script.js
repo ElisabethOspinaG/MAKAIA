@@ -7,7 +7,7 @@ const videos = JSON.parse(sessionStorage.getItem("videos")) || listVideos;
 const containerVideos = document.querySelector(".main_videos");
 console.log(containerVideos);
 
-const loadVideos = (container, videoList) => {
+const showVideosInContainer = (container, videoList) => {
   container.innerHTML = "";
   videoList.forEach((video) => {
     container.innerHTML += `
@@ -30,16 +30,16 @@ const loadVideos = (container, videoList) => {
 };
 
 //3. Vamos a escuchar al evento DomContentLoad (recargar la pagina) y cuando suceda este evento se deben imprimir los personajes
-  document.addEventListener("DOMContentLoaded", () => {
-  loadVideos(containerVideos, videos);
+document.addEventListener("DOMContentLoaded", () => {
+  showVideosInContainer(containerVideos, videos);
 });
 
 //4. Vamos a escuchar el evento click sobre las cards
 document.addEventListener("click", (event) => {
 
   //event.target indica la etiqueta a la cual le hemos dado click pafra que nos captura el atributo a la cual le dado click
-  const dataCardAttribute = event.target.getAttribute("data-card");
-  if (dataCardAttribute === "cards") {
+  const dataVideosAttribute = event.target.getAttribute("data-card");
+  if (dataVideosAttribute === "cards") {
     const id = event.target.getAttribute("name");
     sessionStorage.setItem("idVideo", JSON.stringify(id));
     window.location.href = "./pages/details.html";
@@ -58,16 +58,16 @@ videos.forEach((item) => {
 });
 
 categories.forEach((item) => {
-  const botonFiltrado = document.getElementsByName(item)[0];
+  const btnToFilter = document.getElementsByName(item)[0];
 
-  botonFiltrado.addEventListener("click", () => {
-    const videosFiltrados =
+  btnToFilter.addEventListener("click", () => {
+    const videosFiltered =
       item === "all"
         ? videos
         : videos.filter((element) => element.seenIn.category === item);
-        console.log("info videos filtrado ", videosFiltrados);
+    console.log("info videos filtrado ", videosFiltered);
 
-  loadVideos(containerVideos, videosFiltrados);
+    showVideosInContainer(containerVideos, videosFiltered);
   });
 });
 
@@ -75,15 +75,15 @@ categories.forEach((item) => {
 
 //---------Búsqueda de personajes por nombre..
 
-const filterByName = (termSearch, videoList) => {
-  const videosFiltrados = videoList.filter((person) =>
+const filterVideoByName = (termSearch, videoList) => {
+  const videosFiltered = videoList.filter((person) =>
     person.name.toLowerCase().includes(termSearch.toLowerCase())
   );
-  const result = videosFiltrados.length
-    ? videosFiltrados
+  const result = videosFiltered.length
+    ? videosFiltered
     : videoList;
 
-  const messageResult = videosFiltrados.length
+  const messageResult = videosFiltered.length
     ? false
     : "No existe este video";
 
@@ -110,11 +110,11 @@ formSearch.addEventListener("submit", (e) => {
 
   if (searchTerm) {
 
-    const searchResult = filterByName(searchTerm, videos);
+    const searchResult = filterVideoByName(searchTerm, videos);
 
     console.log(searchResult);
 
-    loadVideos(containerVideos, searchResult.resultSearch);
+    showVideosInContainer(containerVideos, searchResult.resultSearch);
 
     if (searchResult.messageSearch) {
 

@@ -1,0 +1,37 @@
+{
+    "products":[
+        {
+            "id": 1,
+            "name": "papa",
+            "price": 3500,
+            "weight": "1000 grs",
+            "discount": 0.1,
+            "amount": 10,
+            "categories": [
+              "vegetales"
+            ]
+          },
+          {
+            "id": 2,
+            "name": "leche",
+            "price": 4500,
+            "weight": "1 litro",
+            "discount": 0.1,
+            "amount": 10,
+            "categories": [
+              "lácteos"
+            ]
+          },
+          {
+            "id": 3,
+            "name": "solomito",
+            "price": 15000,
+            "weight": "500 grs",
+            "discount": 0.1,
+            "amount": 10,
+            "categories": [
+              "carnicos"
+            ]
+          }
+    ]
+}

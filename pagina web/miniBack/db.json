@@ -1,0 +1,40 @@
+{
+    "products":[
+        {
+            "id": 1,
+            "name": "aceite",
+            "imagen": "./imagenes/aceite.png",
+            "price": 8500,
+            "weight": "1000 grs",
+            "discount": 0.1,
+            "amount": 10,
+            "categories": [
+              "Comestibles y alimentos básicos"
+            ]
+          },
+          {
+            "id": 2,
+            "name": "leche",
+            "imagen": "./imagenes/milk.png",
+            "price": 4500,
+            "weight": "1 litro",
+            "discount": 0.1,
+            "amount": 10,
+            "categories": [
+              "Leche y Lácteos"
+            ]
+          },
+          {
+            "id": 3,
+            "name": "solomito",
+            "imagen": "./imagenes/carne.png",
+            "price": 15000,
+            "weight": "500 grs",
+            "discount": 0.1,
+            "amount": 10,
+            "categories": [
+              "Carnes y Mariscos"
+            ]
+          }
+    ]
+}
