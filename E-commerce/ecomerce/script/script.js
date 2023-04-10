@@ -15,10 +15,10 @@ const response = await axios(URL_PRODUCTS);
 arrayProducs = response.data;
 console.log("todos los productos", arrayProducs);
 
-   // filtrar por categoria:
 
 }
 
+ // filtrar por categoria:
 const filterByCategory = async (categoria) => {
    await getAllProducts();
    const filteredProduct = arrayProducs.filter(item => item.categories.includes(categoria))

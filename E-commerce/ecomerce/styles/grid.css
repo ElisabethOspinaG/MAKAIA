@@ -1,0 +1,93 @@
+/* div*12{$} para que aparezcan de una vez todas las columnas que vamos a utilizar*/
+.container{
+    display: grid; /* --el contenedor va a ser una grid o rejilla-- */
+    gap: 20px; /*-- para darle un espcio de 20 px entre todos los contenedores--*/
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /*--para especificar cuantas colomnunas queremos que tenga mediante su tamaño --*/
+    grid-template-rows: repeat(65, auto);
+    grid-area: "header header header header header"
+                "navbar navbar navbar navbar navbar"
+                "menu menu menu menu menu"
+                "imgPrincipal ImgPrincipal ImgPrincipal ImgSegundary1 ImgSegundary1"
+                "imgPrincipal ImgPrincipal ImgPrincipal ImgSegundary1 ImgSegundary1"
+                "imgPrincipal ImgPrincipal ImgPrincipal ImgSegundary2 ImgSegundary2"
+                "imgPrincipal ImgPrincipal ImgPrincipal ImgSegundary2 ImgSegundary2"
+                "caruselProm caruselProm caruselProm caruselProm caruselProm"
+                "caruselProm caruselProm caruselProm caruselProm caruselProm"
+                "category category titleProductos titleProductos expires"
+                "category category text tex expire"
+                "category category imgProducts1 imgProducts2 imgProducts3"
+                "category category imgProducts1 imgProducts2 imgProducts3"
+                "category category imgProducts1 imgProducts2 imgProducts3"
+                "category category imgProducts4 imgProducts6 imgProducts7"
+                "category category imgProducts4 imgProducts6 imgProducts7"
+                "category category imgProducts5 imgProducts6 imgProducts7"
+                "category category titleCategory titleCategory titleCategory" 
+                "category category toCategory toCategory toCategory"
+                "category category alacena alacena alacena"
+                "category category alacena alacena alacena"
+                "imgFood imgFood titleCupboard titleCupboard titleCupboard"
+                "imgFood imgFood textCupboard textCupboard textCupboard"
+                "imgFood imgFood imgProducts8 imgProducts9 imgProducts10"
+                "imgFood imgFood imgProducts8 imgProducts9 imgProducts10"
+                "imgFood imgFood imgProducts8 imgProducts9 imgProducts10"
+                "imgVegetables imgVegetables bannerCashBarck bannerCashBarck bannerCashBarck"
+                "imgVegetables imgVegetables bannerCashBarck bannerCashBarck bannerCashBarck"
+                "imgVegetables imgVegetables bannerCashBarck bannerCashBarck bannerCashBarck"
+                "imgVegetables imgVegetables bannerready bannerready bannerready"
+                "imgVegetables imgVegetables bannerready bannerready bannerready"
+                "imgVegetables imgVegetables bannerready bannerready bannerready"
+                "imgVegetables imgVegetables titleBestSeller titleBestSeller titleBestSeller"
+                "imgVegetables imgVegetables textBestSeller textBestSeller textBestSeller"
+                "imgVegetables imgVegetables imgProducts11 imgProducts11 imgProducts12"
+                "imgVegetables imgVegetables imgProducts11 imgProducts11 imgProducts12"
+                "imgVegetables imgVegetables imgProducts13 imgProducts13 imgProducts14"
+                "imgVegetables imgVegetables imgProducts13 imgProducts13 imgProducts14"
+                "imgtending imgtending imgProducts15 imgProducts15 imgProducts16"
+                "imgtending imgtending imgProducts15 imgProducts15 imgProducts16"
+                "imgtending imgtending imgProducts17 imgProducts17 imgProducts18"
+                "imgtending imgtending imgProducts17 imgProducts17 imgProducts18"
+                "imgtending imgtending bannerVegetals bannerVegetals bannerVegetals"
+                "imgtending imgtending bannerVegetals bannerVegetals bannerVegetals"
+                "customerComment customerComment titleFeature titleFeature titleFeature"
+                "customerComment customerComment textfeature textfeature textfeature"
+                "customerComment customerComment imgProducts18 imgProducts18 imgProducts19"
+                "customerComment customerComment imgProducts18 imgProducts18 imgProducts19"
+                "customerComment customerComment dataProducts18 dataProducts18 dataProducts19"
+                "Banner Banner infoBanner imgBanner  imgBanne"
+                "Banner infoBanner infoBanner imgBanner  imgBanne"
+                "Banner infoBanner infoBanner imgBanner  imgBanne"
+                "footer footer footer footer footer"
+                "footer footer footer footer footer"
+                "footer footer footer footer footer"
+                "footer footer footer footer footer"
+                "footer footer footer footer footer"
+                "footer footer footer footer footer"
+                "footer footer footer footer footer"
+                "footer footer footer footer footer"
+                "footer footer footer footer footer"
+                "footer footer footer footer footer"
+                "footer footer footer footer footer"
+                "footer footer footer footer footer"
+                "footer footer footer footer footer"        
+}
+
+.container .header {
+    background: coral;
+    grid-column-start: header;
+    grid-column-end: header;
+}
+
+/* --- APUNTES ---*/
+
+  /* grid-template-columns: repeat(4,1fr); /* es una funcion que nos repite ese numero de veces las columnas
+    grid-template-rows: repeat(4,1fr); */
+    /* grid-column-start: 1; para ocupar de a columna 1 
+    grid-column-end: 3; a la menos 3 */ 
+    /* grid-row-start: 1;
+    grid-row-end: 3; */
+
+    /*  Spam */ 
+    /* grid-column: 2 / span 5; va de la columna 2 a la 5*/
+    /* grid-row: 3 / span 2; va de la fila 3 a la 5
+
+    /* -- Grid Areas -- */
