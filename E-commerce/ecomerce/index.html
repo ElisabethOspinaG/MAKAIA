@@ -1,50 +1,368 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Page Title</title>
-        <meta charset="UTF-8">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="./styles/styles.css"/>
-        <link rel="stylesheet" type="text/css" href="./styles/grid.css"/>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    </head>
-    <body>
-        <div class="container">
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-            <div>4</div>
-            <div>5</div>
-            <div>6</div>
-            <div>7</div>
-            <div>8</div>
-            <div>9</div>
-            <div>10</div>
-            <div>11</div>
-            <div>12</div>
-            <div>13</div>
-            <div>14</div>
-            <div>15</div>
-            <div>16</div>
-            <div>17</div>
-            <div>18</div>
-            <div>19</div>
-            <div>20</div>
-            <div>21</div>
-            <div>22</div>
-            <div>23</div>
-            <div>24</div>
+<html lang="es">
+  <head>
+    <title>Page Title</title>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Poppins:ital,wght@0,700;1,400&family=Public+Sans:ital,wght@0,100;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="./styles/grid.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <script src="./pages/login.html"></script>
+  </head>
+  <body>
+    <header class="header">
+      <section id="id__seccion--header" class="seccion__header d-flex">
+        <div class="align-items-center d-flex w-100 p-3">
+          <div class="col-8">
+            <h6 class="text-white">
+              <strong class="me-1">Welcome to Fastkart!</strong>
+              <span class="header_span-button">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              </span>
+              <strong class="ms-1">New Coupon Code: Fast024 </strong>
+            </h6>
+          </div>
+          <div class="text-bg-light d-flex justify-content-end col- 4 input-group">
+            <span class="header_span-button">
+              <figure class="figure">
+                <img class="figure-img img-fluid rounded" src="./img/header/banderas/colombia.png" alt="imgBandera" />
+              </figure>         
+            </span>
+            <button id= "btn_bandera" type="button" class="btn btn-outline-light dropdown-toggle btn-sm" data-bs-toggle="dropdown"
+            >Colombia</button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="">Germani</a></li>
+                <span class="input-group-text">
+                  <figure class="figure">
+                  <img class="figure-img img-fluid rounded" src="./img/header/banderas/germany.png" alt="imgMoneda" />
+              </span>
+              </ul>
+            <button type="button" class="btn btn-outline-light btn-sm" data-bs-toggle="dropdown"> PESOS </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">EUR</a></li>
+            </ul>
+          </div>
         </div>
-       
+      </section>
+      <nav class="header__navbar">
+        <div class="align-items-center d-flex w-100 p-3">
+          <div class="col-3 header__Search">
+            <figure class="header__logo">
+                <img src="./img/logo/logoEcommerce.png" alt="logo">
+            </figure>
+          </div>
+          <div class="col d-flex">
+            <form class="form-group me-2 d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+              <button id="button_search" class="btn btn-warning d-flex" value="btn-warning " type="submit"> 
+                <figure>
+                  <img src="./img/header/icons/icon-search.png" alt="imgSearch" srcset="">
+                </figure>
+              </button>
+            </form>
+          </div>
+          <div class="col d-flex justify-content-end">
+            <button id="button_search" class="btn btn-outline-light btn-sm" value="btn-warning " type="submit"> 
+              <figure>
+                <img src="./img/header/icons/icons-phone.png" alt="imgSearch" srcset="">
+              </figure>
+            </button>
+            <button id="button_search" class="btn btn-outline-light btn-sm" value="btn-warning " type="submit"> 
+              <figure>
+                <img src="./img/header/icons/icons-star.png" alt="imgSearch" srcset="">
+              </figure>
+            </button>
+            <button id="button_search" class="btn btn-outline-light btn-sm" value="btn-warning " type="submit"> 
+              <figure>
+                <img src="./img/header/icons/icons-compra.png" alt="imgSearch" srcset="">
+              </figure>
+              </button>
+            <button id="button_search" class="btn btn-outline-light btn-sm" value="btn-warning " type="submit"> 
+              <figure>
+                <img src="./img/header/icons/iconscustomer.png" alt="imgSearch" srcset="">
+              </figure>
+            </button>
+          </div>
+        </div>
+    </nav>
+      
+    </header>
+    <main>
+      <section>
+        <div class="row">
+          <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-dark p-4">
+              <h5 class="text-white h4">Collapsed content</h5>
+              <span class="text-body-secondary"
+                >Toggleable via the navbar brand.</span
+              >
+            </div>
+          </div>
+          <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarToggleExternalContent"
+                aria-controls="navbarToggleExternalContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+          </nav>
+        </div>
 
-            
-        
-        
-            
-        
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-        <script type="text/javascript" src="./script/script.js"></script>
-        <script src="https://kit.fontawesome.com/8bef8de180.js" crossorigin="anonymous"></script>
-    </body>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="div__nav--menu collapse navbar-collapse"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled">Disabled</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Search
+                </button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </section>
+
+      <section class="seccion__Prom">
+        <div class="container">
+          <div id="Seccion__div--prom" class="row d-flex bg-green">
+            <div class="col">
+              <figure>
+                <img src="" alt="figurePromo" />
+                <div>
+                  <span> porcentaje descuento </span>
+                  <h3>nombre promocion</h3>
+                  <h4>categoria</h4>
+                </div>
+                <div>
+                  <input type="button" value="button_Shop--now" />
+                </div>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="list__filter--category" class="seccion__Categories">
+        <div class="row btn-warning align-items-center mheight w-100">
+          <div class="col-4 bg-light p-5">
+            <h5>Categorias</h5>
+            <div class="w-100 d-flex">
+              <hr class="bg-green w-25 separador" />
+              <span>Icon</span>
+              <hr class="bg-green w-25 separador" />
+            </div>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Active</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link disabled"
+                  href="#"
+                  tabindex="-1"
+                  aria-disabled="true"
+                  >Disabled</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-8 bg-green p-5">
+            <div class="row bg-light p-5">
+              <div class="col">
+                <h3>Top Save Today</h3>
+                <div class="w-100 d-flex">
+                  <hr class="bg-green w-25 separador" />
+                  <span>Icon</span>
+                  <hr class="bg-green w-25 separador" />
+                </div>
+                <span>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Recusandae nihil expedita
+                </span>
+              </div>
+              <div class="col">
+                <div
+                  class="row align-items-center mheight justify-content-end w-30"
+                >
+                  <input
+                    type="button"
+                    class="btn btn-danger"
+                    value="Time_expired_Oferta"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div id="" class="card-group">
+                <div class="card">
+                  <img src="#" class="card-img-top" alt="imgProducts1" />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      This is a wider card with supporting text below as a
+                      natural lead-in to additional content. This content is a
+                      little bit longer.
+                    </p>
+                    <p class="card-text">
+                      <small class="text-body-secondary"
+                        >Last updated 3 mins ago</small
+                      >
+                    </p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="#" class="card-img-top" alt="imgProducts2" />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      This card has supporting text below as a natural lead-in
+                      to additional content.
+                    </p>
+                    <p class="card-text">
+                      <small class="text-body-secondary"
+                        >Last updated 3 mins ago</small
+                      >
+                    </p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="#" class="card-img-top" alt="imgProducts3" />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      This is a wider card with supporting text below as a
+                      natural lead-in to additional content. This card has even
+                      longer content than the first to show that equal height
+                      action.
+                    </p>
+                    <p class="card-text">
+                      <small class="text-body-secondary"
+                        >Last updated 3 mins ago</small
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row"></div>
+            <div class="row">
+              <div class="col">
+                <figure></figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section class="footer">
+        <div class="container w-100 mb-2 bg-light">
+          <div class="row p-4">
+            <div class="col bg-green">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestiae totam, error nostrum sed ut voluptate incidunt quia
+                qui, quos natus officia dolorum. Illo neque quod, et ullam sint
+                voluptates natus?
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="./script/script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/8bef8de180.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

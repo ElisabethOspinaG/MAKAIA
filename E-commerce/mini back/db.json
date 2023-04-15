@@ -1,0 +1,70 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "papa",
+      "imagen": "#",
+      "price": 3500,
+      "weight": "1000 grs",
+      "discount": "true",
+      "valorDiscount": 0.1,
+      "amount": 10,
+      "categories": [
+        "vegetales"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "leche",
+      "price": 4500,
+      "weight": "1 litro",
+      "discount": "false",
+      "valorDiscount": 0.1,
+      "amount": 10,
+      "categories": [
+        "lácteos"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "solomito",
+      "price": 15000,
+      "weight": "500 grs",
+      "discount": 0.1,
+      "amount": 10,
+      "categories": [
+        "carnicos"
+      ]
+    }
+  ],
+  "usuarios": [
+    {
+      "id": 1,
+      "name": "Elisabeth Ospina",
+      "type": "administrador",
+      "userName": "Elisabeth",
+      "password": "1234*"
+    },
+    {
+      "id": 2,
+      "name": "Petito Perez",
+      "type": "cliente",
+      "userName": "Pepito",
+      "password": "1234*"
+    },
+    {
+      "id": 3,
+      "name": "Gesiel Gimenez",
+      "type": "cliente",
+      "userName": "Gesiel",
+      "password": "1234*"
+    },
+    {
+      "id": 4,
+      "name": "Angie Moreno",
+      "rol": "agente",
+      "userName": "AngieM",
+      "password": "1234*"
+    }
+  ]
+}
