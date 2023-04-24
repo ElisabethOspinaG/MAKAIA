@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Public Sans", sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding-left: 40px;
+    padding-right: 40px;
+    background: #0da487;
+    color: white;
+    text-align: center;
+}
+
+.seccion__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.seccion__main--prom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.container__Prom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 80%;
+    overflow: hidden; /*--- recorta contenido que se salga del contenedor.*/
+    position: relative;
+}
+
+.container__prom--left {
+    width: 60%;
+    height: 100%;
+    position: relative;
+    border-radius: 20px;
+    
+    /*--- box-shadow: 5px 8px 12px black; darle un borde y sombra al contenedor de la img*/
+}
+
+.container__prom--right {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.figure__img--promLeft img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.figure__img--promRight img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover; /*--- recorta contenido que se salga del contenedor.*/
+    margin-bottom: 20px;
+}
+
+.container__promoItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+
+.promoItem__title1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+.promoItem__title2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.promoItem__paraffo {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+.promoItem__button {
+    background-color: #9d2424;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  /*--- ESTILOS DE LOS TEXTOS SOBRE LAS IMAGENES --*/
+
+  .figure__img--promLeft {
+    position: relative;
+  }
+
+  .container__promoItem {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-90%, -40%);
+    z-index: 1;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  
+

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <title>Page Title</title>
+    <title>Ecommerce</title>
     <meta charset="UTF-8" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,16 +16,15 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" type="text/css" href="./styles/styles.css" />
-    <!-- <link rel="stylesheet" type="text/css" href="./styles/grid.css" /> -->
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
-    <script src="./pages/login.html"></script>
+    <!-- <script src="./script/script.js"></script> -->
   </head>
   <body>
     <header class="header">
-      <section id="id__seccion--header" class="seccion__header d-flex">
+      <section id="id__seccion--header" class="seccion__header">
         <div class="align-items-center d-flex w-100 p-3">
           <div class="col-8">
             <h6 class="text-white">
@@ -59,295 +58,366 @@
         </div>
       </section>
       <nav class="header__navbar">
-        <div class="align-items-center d-flex w-100 p-3">
+        <div class="row d-flex">
           <div class="col-3 header__Search">
             <figure class="header__logo">
                 <img src="./img/logo/logoEcommerce.png" alt="logo">
             </figure>
           </div>
-          <div class="col d-flex">
+          <div class="header__search col-6 d-flex ">
             <form class="form-group me-2 d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+              <input class="header__input-search form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
               <button id="button_search" class="btn btn-warning d-flex" value="btn-warning " type="submit"> 
-                <figure>
+                <figure class="header_icon-button">
                   <img src="./img/header/icons/icon-search.png" alt="imgSearch" srcset="">
                 </figure>
               </button>
             </form>
           </div>
-          <div class="col d-flex justify-content-end">
-            <button id="button_search" class="btn btn-outline-light btn-sm" value="btn-warning " type="submit"> 
-              <figure>
-                <img src="./img/header/icons/icons-phone.png" alt="imgSearch" srcset="">
+          <div class="col-3 d-flex justify-content-end ">
+            <button id="button_phone" class="btn btn-outline-light btn-sm" value="btn-phone " type="submit"> 
+              <figure class="header_icon-button">
+                <img src="./img/header/icons/icons-phone.png" alt="phone" srcset="">
               </figure>
             </button>
-            <button id="button_search" class="btn btn-outline-light btn-sm" value="btn-warning " type="submit"> 
-              <figure>
-                <img src="./img/header/icons/icons-star.png" alt="imgSearch" srcset="">
+            <button id="button_star" class="btn btn-outline-light btn-sm" value="btn-star " type="submit"> 
+              <figure class="header_icon-button">
+                <img src="./img/header/icons/icons-star.png" alt="star" srcset="">
               </figure>
-            </button>
-            <button id="button_search" class="btn btn-outline-light btn-sm" value="btn-warning " type="submit"> 
-              <figure>
-                <img src="./img/header/icons/icons-compra.png" alt="imgSearch" srcset="">
+            </button >
+            <button id="button_car" class="btn btn-outline-light btn-sm" value="btn-car " type="submit"> 
+              <figure class="header_icon-button">
+                <img src="./img/header/icons/icons-compra.png" alt="carShop" srcset="">
               </figure>
               </button>
-            <button id="button_search" class="btn btn-outline-light btn-sm" value="btn-warning " type="submit"> 
-              <figure>
-                <img src="./img/header/icons/iconscustomer.png" alt="imgSearch" srcset="">
+            <button id="button_usser" class="btn btn-outline-light btn-sm" value="btn-usser " type="submit"> 
+              <figure class="header_icon-button">
+                <img src="./img/header/icons/iconscustomer.png" alt="loginUser" srcset="">
               </figure>
             </button>
           </div>
         </div>
-    </nav>
-      
-    </header>
-    <main>
-      <section>
-        <div class="row">
-          <div class="collapse" id="navbarToggleExternalContent">
-            <div class="bg-dark p-4">
-              <h5 class="text-white h4">Collapsed content</h5>
-              <span class="text-body-secondary"
-                >Toggleable via the navbar brand.</span
-              >
-            </div>
-          </div>
-          <nav class="navbar navbar-dark bg-dark">
-            <div class="container-fluid">
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarToggleExternalContent"
-                aria-controls="navbarToggleExternalContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span class="navbar-toggler-icon"></span>
-              </button>
-            </div>
-          </nav>
-        </div>
-
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
+      </nav>
+      <section class="seccion__header--menu">
+        <div class="row w-100 d-flex">
+          <div class="col-3 d-flex dropdown">
+            <button id="button__menu" class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              All Productos
             </button>
-            <div
-              class="div__nav--menu collapse navbar-collapse"
-              id="navbarSupportedContent"
-            >
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >Home</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Dropdown
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li><hr class="dropdown-divider" /></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled">Disabled</a>
-                </li>
-              </ul>
-              <form class="d-flex" role="search">
-                <input
-                  class="form-control me-2"
-                  type="search"
-                  placeholder="Search"
-                  aria-label="Search"
-                />
-                <button class="btn btn-outline-success" type="submit">
-                  Search
-                </button>
-              </form>
-            </div>
-          </div>
-        </nav>
-      </section>
-
-      <section class="seccion__Prom">
-        <div class="container">
-          <div id="Seccion__div--prom" class="row d-flex bg-green">
-            <div class="col">
-              <figure>
-                <img src="" alt="figurePromo" />
-                <div>
-                  <span> porcentaje descuento </span>
-                  <h3>nombre promocion</h3>
-                  <h4>categoria</h4>
-                </div>
-                <div>
-                  <input type="button" value="button_Shop--now" />
-                </div>
-              </figure>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="list__filter--category" class="seccion__Categories">
-        <div class="row btn-warning align-items-center mheight w-100">
-          <div class="col-4 bg-light p-5">
-            <h5>Categorias</h5>
-            <div class="w-100 d-flex">
-              <hr class="bg-green w-25 separador" />
-              <span>Icon</span>
-              <hr class="bg-green w-25 separador" />
-            </div>
-            <ul class="nav flex-column">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >Active</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link disabled"
-                  href="#"
-                  tabindex="-1"
-                  aria-disabled="true"
-                  >Disabled</a
-                >
-              </li>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Frutas y Verduras</a></li>
+              <li><a class="dropdown-item" href="#">Bebidas</a></li>
+              <li><a class="dropdown-item" href="#">Carnes y Mariscos</a></li>
+              <li><a class="dropdown-item" href="#">Desayuno y Lacteos</a></li>
+              <li><a class="dropdown-item" href="#">Comidas Congeladas</a></li>
+              <li><a class="dropdown-item" href="#">Galletas y bocadillos</a></li>
+              <li><a class="dropdown-item" href="#">Comestibles y Alimentos Basicos</a></li>
             </ul>
           </div>
-          <div class="col-8 bg-green p-5">
-            <div class="row bg-light p-5">
-              <div class="col">
-                <h3>Top Save Today</h3>
-                <div class="w-100 d-flex">
+          <div class="header__links  col-8 d-flex ">
+            <ul>
+              <li><a href="">Hogar</a></li>
+              <li><a href="">Comercio</a></li>
+              <li><a href="">Producto</a></li>
+              <li><a href="">Mega Menu</a></li>
+              <li><a href="">Blog</a></li>
+              <li><a href="">Paginas</a></li>
+              <li><a href="">Vendedor</a></li>
+            </ul>
+          </div>
+          <div class="col-1 d-flex justify-content-end">
+            <button id="button__ofert" class="header__button-ofert">
+              <span class="header_span-button">
+                <figure class= "header_icon-button">
+                  <img class="img__Button-ofert" src="./img/header/icons/icons-rayo.png" alt="icon_rayo">
+                </figure>
+              </span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main class="main">
+      <section class="seccion__main--prom">
+        <div class="container__Prom">
+            <div class="container__prom--left">
+                <figure class="figure__img--promLeft">
+                    <img src="./img/main/banner/1.jpg" />
+                </figure>
+                <div class="container__promoItem">
+                    <div class="container__bestDiscount">
+                        <h5>exclusive offer</h5>
+                        <button class="button__bestDiscount">
+                          <span class="discounts">30%</span>
+                          <span>Off</span>
+                        </button>
+                    </div>
+                    <div class="container__promo--tex">
+                      <h2 class="promoItem__title">STAY HOME & </h2>
+                      <h2 class="promoItem__title">DELIVERY YOUR</h2>
+                      <h2 class="promoItem__title2">DAILY NEEDS</h2>
+                      <P class="promoItem__paragraph">vegetables contain many vitamins and minerals that are good for your health.</P>
+                      <button class= "promoItem__button" type="submit">Shop now -> </button>
+                    </div>
+                </div>
+            </div>
+            <div class="container__prom--right">
+                <figure class="figure__img--promRight">
+                    <img src="./img/main/banner/2.jpg" />
+                    <img src="./img/main/banner/3.jpg" />
+                </figure>
+            </div>
+        </div>
+      </section>
+      <section class="section__discounts">
+        <div class="container__discount">
+          <div class="container__discount-banner">
+            <figure class="figure__discount">
+              <img class=""  src="./img/main/descuentos/4.jpg" alt="">
+            </figure>
+          </div>
+          <div class="container__discount-banner">
+            <figure class="figure__discount">
+              <img class="" src="./img/main/descuentos/5.jpg" alt="">
+            </figure>
+          </div>
+          <div class="container__discount-banner">
+            <figure class="figure__discount">
+              <img class="" src="./img/main/descuentos/6.jpg" alt="">
+            </figure>
+          </div>
+        </div>
+      </section>
+      <section id="list__filter--category" class="seccion__Categories">
+        <div class="row mheight">
+          <div class="col-4 bg-light">
+            <h3>Category</h3>
+            <div class="w-100 d-flex">
+              <hr class="bg-green w-25 separador" />
+            </div>
+            <div class="filter">
+              <ul class="nav flex-column">
+                <li class="nav-item"> 
+                    <div class="d-flex">
+                      <span>
+                        <figure class="img__category">
+                          <img src="./img/main/icons category/vegetable.svg" class="filterCategory" name='Vegetables & Fruit' alt="vegetables & fruit">
+                        </figure>
+                      </span>
+                      <span name='Vegetables & Fruit'>Vegetables & Fruit</span>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="d-flex">
+                      <span>
+                        <figure class="img__category">
+                          <img src="./img/main/icons category/cup.svg" class="filterCategory" name='Beverages' alt="Beverages">
+                        </figure>
+                      </span>
+                      <span name='Beverages'>Beverages</span>
+                    </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <div class="d-flex">
+                      <span>
+                        <figure class="img__category">
+                          <img src="./img/main/icons category/meats.svg" class="filterCategory" name='Meat & Seafood' alt="Meat & Seafood">
+                        </figure>
+                      </span>
+                      <span name='Meat & Seafood' >Meat & Seafood</span>
+                    </div>
+                   </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <div class="d-flex ">
+                      <span class="">
+                        <figure class="img__category">
+                          <img src="./img/main/icons category/breakfast.svg" class="filterCategory" name='Breakfast & Dairy' alt="Breakfast & Dairy">
+                        </figure>
+                      </span>
+                      <span name='Breakfast & Dairy'>Breakfast & Dairy</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <div class="d-flex ">
+                      <span>
+                        <figure class="img__category">
+                          <img src="./img/main/icons category/frozen.svg" class="filterCategory" name='Frozen Foods' alt="Frozen Foods">
+                        </figure>
+                      </span>
+                      <span name='Frozen Foods'>Frozen Foods</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <div class="d-flex">
+                      <span>
+                        <figure class="img__category">
+                          <img src="./img/main/icons category/milk.svg" class="filterCategory" name='Biscuits & Snacks' alt="Biscuits & Snacks">
+                        </figure>
+                      </span>
+                      <span name='Biscuits & Snacks'>Biscuits & Snacks</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <div class="d-flex">
+                      <span>
+                        <figure class="img__category">
+                          <img src="./img/main/icons category/comidaPerro.svg" class="filterCategory" name='Grocery & Staples' alt="Grocery & Staples">
+                        </figure>
+                      </span>
+                      <span name='Grocery & Staples'>Grocery & Staples</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <div class="d-flex">
+                      <span>
+                        <figure class="img__category">
+                          <img src="./img/main/icons category/milk.svg" class="filterCategory" name='Wines & alcohol drinks' alt="Wines & alcohol drinks">
+                        </figure>
+                      </span>
+                      <span name='Wines & alcohol drinks'> Wines & alcohol drinks</span>
+                    </div>
+                  </a>
+                </li>
+                <!-- <li class="nav-item">
+                  <a class="nav-link disabled" href="./pages/datails.html" tabindex="-1" aria-disabled="true"> 
+                    Disabled</a>
+                </li> -->
+              </ul>
+            </div>
+          </div>
+          <div class=" col-8">
+            <div class="row">
+              <div class="col mb-3">
+                <h2>Top Save Today</h2>
+                <div class="d-flex">
                   <hr class="bg-green w-25 separador" />
-                  <span>Icon</span>
+                  <span><img class= "img__category" src="./img/main/icons/icons.trebol.png" alt=""></span>
                   <hr class="bg-green w-25 separador" />
                 </div>
-                <span>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Recusandae nihil expedita
+                <span class="span__category">
+                  Don´t miss this opportunity at a special discount just for this week.
                 </span>
               </div>
-              <div class="col">
-                <div
-                  class="row align-items-center mheight justify-content-end w-30"
-                >
-                  <input
-                    type="button"
-                    class="btn btn-danger"
-                    value="Time_expired_Oferta"
-                  />
+              <div class="col container__expirer">
+                <div class="row al mheight justify-content-end">
+                  <input type="button " class="btn btn-danger" value="Expires in 3 : 45 : 37"/>
                 </div>
               </div>
             </div>
             <div class="row">
-              <div id="" class="card-group">
-                <div class="card">
-                  <img src="#" class="card-img-top" alt="imgProducts1" />
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">
-                      This is a wider card with supporting text below as a
-                      natural lead-in to additional content. This content is a
-                      little bit longer.
-                    </p>
-                    <p class="card-text">
-                      <small class="text-body-secondary"
-                        >Last updated 3 mins ago</small
-                      >
-                    </p>
-                  </div>
-                </div>
-                <div class="card">
-                  <img src="#" class="card-img-top" alt="imgProducts2" />
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">
-                      This card has supporting text below as a natural lead-in
-                      to additional content.
-                    </p>
-                    <p class="card-text">
-                      <small class="text-body-secondary"
-                        >Last updated 3 mins ago</small
-                      >
-                    </p>
-                  </div>
-                </div>
-                <div class="card">
-                  <img src="#" class="card-img-top" alt="imgProducts3" />
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">
-                      This is a wider card with supporting text below as a
-                      natural lead-in to additional content. This card has even
-                      longer content than the first to show that equal height
-                      action.
-                    </p>
-                    <p class="card-text">
-                      <small class="text-body-secondary"
-                        >Last updated 3 mins ago</small
-                      >
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row"></div>
-            <div class="row">
-              <div class="col">
-                <figure></figure>
+              <div id="containerProducts" class="card-group bg-green">
+                <img src="./img/main/icons/x-circle.svg" alt="circle">
               </div>
             </div>
           </div>
         </div>
       </section>
     </main>
-    <footer>
-      <section class="footer">
-        <div class="container w-100 mb-2 bg-light">
-          <div class="row p-4">
-            <div class="col bg-green">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Molestiae totam, error nostrum sed ut voluptate incidunt quia
-                qui, quos natus officia dolorum. Illo neque quod, et ullam sint
-                voluptates natus?
-              </p>
+    <footer class="bd-footer py-4 py-md-5 mt-5 bg-body-tertiary">
+      <section class="footer__seccion">
+        <div class="container py-4 py-md-5 px-4 px-md-3 text-body-secondary">
+          <div class="row">
+            <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+              <img src="#" alt="logo">
+              <ul class="list-unstyled small">
+                <li class="mb-2">
+                  <p class="d-inline-flex align-items-center mb-2 text-body-emphasis text-decoration-none">
+                    In publishing and graphic design,
+                  </p>
+                </li>
+                <div>
+                  <img src="#" alt="">
+                  <span> 1418 Riverwood Drive, CA 96052, US</span>
+                </div>
+                <div>
+                  <img src="#" alt="">
+                  <span>support@fastkart.com</span>
+                </div>
+              </ul>
+            </div>
+            <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+              <h5>Categories</h5>
+              <ul class="list-unstyled">
+                <li class="mb-2"> <a href="/">Vegetables & Fruit </a></li>
+                <li class="mb-2"> <a href="/">Beverages </a></li>
+                <li class="mb-2"> <a href="/">Meat & Seafood </a></li>
+                <li class="mb-2"> <a href="/">Breakfast & Dairy</a></li>
+                <li class="mb-2"> <a href="/">Frozen Foods</a></li>
+                <li class="mb-2"> <a href="/">Biscuits & Snacks</a></li>
+                <li class="mb-2"> <a href="/">Grocery & Staples</a></li>
+                <li class="mb-2"> <a href="/">Wines & alcohol drinks</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-lg-2 mb-3">
+              <h5>Uselful Links</h5>
+              <ul class="list-unstyled">
+                <li class="mb-2"> <a href="/">Home</a></li>
+                <li class="mb-2"> <a href="/">Shop</a></li>
+                <li class="mb-2"> <a href="/">Abaut Us</a></li>
+                <li class="mb-2"> <a href="/">Blog</a></li>
+                <li class="mb-2"> <a href="/">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-lg-2 mb-3">
+              <h5>Help Center</h5>
+              <ul class="list-unstyled">
+                <li class="mb-2"> <a href="/">Your Order</a></li>
+                <li class="mb-2"> <a href="/">Your Account</a></li>
+                <li class="mb-2"> <a href="/">Track Order</a></li>
+                <li class="mb-2"> <a href="/">Your Wishlist</a></li>
+                <li class="mb-2"> <a href="/">Search</a></li>
+                <li class="mb-2"> <a href="/">FAQ</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-lg-2 mb-3">
+              <h5>Contact Us</h5>
+              <img src="#" alt="phone">
+              <span>Hotline 24/7</span>
+              <span>+91 888 104 2340</span>
+              <hr>
+              <img src="#" alt="phone">
+              <span>Email Address:</span>
+              <span>FastKart@hotmail.com</span>
+              <hr>
+              <span>Dowload App</span>
+              <div class=" row d-flex">
+                <img src="#" alt="">
+                <img src="#" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="footer__seccion">
+        <div class="container">
+          <div class="row d-flex">
+            <div class="col-3  d-flex">
+              <h5>Start All rights reserved</h5>
+            </div>
+            <div class="col-5 d-flex">
+              <img src="#" alt="paypal">
+              <img src="#" alt="visa">
+              <img src="#" alt="mastercard">
+              <img src="#" alt="stripe">
+              <img src="#" alt="AmericanExpress">
+            </div>
+            <div class="col-4 d-flex">
+              <span>Stay connected</span>
+              <img src="#" alt="facebook">
+              <img src="#" alt="twieter">
+              <img src="#" alt="instagram">
+              <img src="#" alt="Pirent">
             </div>
           </div>
         </div>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Poppins:ital,wght@0,700;1,400&family=Public+Sans:ital,wght@0,100;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <!-- <script src="./script/script.js"></script> -->
+</head>
+<body>
+    <div class="container-category">
+        <div class="row d-flex">
+            <div clase="col-4">
+                <h3> Categories</h3>
+                <div class="cotainer">
+                    <ul>
+                        <li> 
+                            <img src="#" alt="">
+                            <span> vegetales</span>
+                        </li>
+                        <li> 
+                            <img src="#" alt="">
+                            <span> Bebidas</span>
+                        </li>
+                        <li> 
+                            <img src="#" alt="">
+                            <span> Desayuno</span>
+                        </li>
+                        <li> 
+                            <img src="#" alt="">
+                            <span>carnicos</span>
+                        </li>
+                        <li> 
+                            <img src="#" alt="">
+                            <span> Snacks</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-8">
+                <div class="col d-flex">
+                    <div class="container d-flex"> 
+                        <h2>To say</h2>
+                        <hr>
+                        <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis nulla itaque odit fugit ull</p>
+                    </div>
+                    <div class="">
+                        <button class="btn btn-danger">Expired in</button>
+                    </div>
+                    <div class="card-category">
+                        <div class="card-group">
+                            <div class="card">
+                              <img src="../img/main/productos/1.png" class="card-img-top" alt="producto1">
+                              <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                              </div>
+                              <div class="card-footer">
+                                <div id="favorits" class="btn-group">
+                                    <button type="button" class="btn btn-outline-light" data-card='eye' name=${product.id}>
+                                        <img src="./img/main/icons/eye.svg" alt="eye">
+                                    </button>
+                                    <button type="button" class="btn btn-outline-light" data-card='cards' name=${product.id}>
+                                        <img src="./img/main/icons/arrow-repeat.svg" alt="arrow">
+                                    </button>
+                                    <button type="button" class="btn btn-outline-light">
+                                        <img data-id=${product.id} data-btn='btnfavorite' src="./img/main/icons/heart.svg" alt="arrow">
+                                    </button>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

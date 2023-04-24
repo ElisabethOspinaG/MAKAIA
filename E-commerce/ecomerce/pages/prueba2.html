@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Public Sans", sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding-left: 40px;
+    padding-right: 40px;
+    background: #0da487;
+    color: white;
+    text-align: center;
+}
+
+.seccion__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.seccion__main--prom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.container__Prom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 80%;
+    overflow: hidden; /*--- recorta contenido que se salga del contenedor.*/
+}
+
+.container__prom--left {
+    width: 60%;
+    height: 100%;
+}
+
+.container__prom--right {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.figure__img--promLeft img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.figure__img--promRight img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover; /*--- recorta contenido que se salga del contenedor.*/
+    margin-bottom: 20px;
+}
+
+.container__promoItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+
+.promoItem__title1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+.promoItem__title2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.promoItem__paraffo {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+.promoItem__button {
+    background-color: #9d2424;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+</style>
+  </head>
+  <body>
+    <header>
+        <section class="seccion__header">
+            <h1>hola</h1>
+            <h2>half</h2>
+        </section>
+    </header>
+    <main>
+        <section class="seccion__main--prom">
+            <div class="container__Prom">
+                <div class="container__prom--left">
+                    <figure class="figure__img--promLeft">
+                        <img src="../img/main/banner/1.jpg" />
+                        <div class="container__promoItem">
+                            <div class="container__bestDiscount">
+                                <h5>Oferta Exclusiva</h2>
+                                <button class="button__bestDiscount"></button>
+                            </div>
+                            <h2 class="promoItem__title1">QUÉDATE EN CASA Y ENTREGA TU </h2>
+                            <h2 class="promoItem__title2">NECESIDADES DIARIAS</h2>
+                            <P class="promoItem__parrafo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. remmeplar este texto por el verdadero</P>
+                            <button class= "promoItem__button" type="submit">Compra ahora -> </button>
+                        </div>
+                    </figure>
+                </div>
+                <div class="container__prom--right">
+                    <figure class="figure__img--promRight">
+                        <img src="../img/main/banner/2.jpg" />
+                        <img src="../img/main/banner/3.jpg" />
+                    </figure>
+                  
+                </div>
+            </div>
+        </section>
+    </main>
+  </body>
+</html>

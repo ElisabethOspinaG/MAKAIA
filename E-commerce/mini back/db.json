@@ -2,42 +2,48 @@
   "products": [
     {
       "id": 1,
-      "name": "papa",
-      "imagen": "#",
+      "name": "peanut Butter Bite Premium Butter Cookies 600 g",
+      "imagen": "../ecomerce/img/main/productos/1.png",
       "price": 3500,
-      "weight": "1000 grs",
+      "weight": "600 g",
       "discount": "true",
       "valorDiscount": 0.1,
+      "totalDiscount": 3500,
       "amount": 10,
       "categories": [
-        "vegetales"
+        "Biscuits & Snacks"
       ]
     },
     {
       "id": 2,
-      "name": "leche",
-      "price": 4500,
-      "weight": "1 litro",
+      "name": "Fantasy Crunchy Choco Chip Cookies",
+      "imagen": "../ecomerce/img/main/productos/2.png",
+      "price": 3000,
+      "weight": "500 grs",
       "discount": "false",
       "valorDiscount": 0.1,
+      "totalDiscount": 3000,
       "amount": 10,
       "categories": [
-        "lácteos"
+        "Vegetables & Fruit"
       ]
     },
     {
       "id": 3,
-      "name": "solomito",
-      "price": 15000,
-      "weight": "500 grs",
-      "discount": 0.1,
+      "name": "Yumitos Chilli Sprinkled Potato Chips 100 g",
+      "imagen": "../ecomerce/img/main/productos/3.png",
+      "price": 2000,
+      "weight": "100 g",
+      "discount": "true",
+      "valorDiscount": 0.1,
+      "totalDiscount": 2000,
       "amount": 10,
       "categories": [
-        "carnicos"
+        "Beverages"
       ]
     }
   ],
-  "usuarios": [
+  "users": [
     {
       "id": 1,
       "name": "Elisabeth Ospina",
@@ -48,23 +54,62 @@
     {
       "id": 2,
       "name": "Petito Perez",
-      "type": "cliente",
+      "type": "administrador",
       "userName": "Pepito",
-      "password": "1234*"
+      "password": "456*"
     },
     {
       "id": 3,
-      "name": "Gesiel Gimenez",
-      "type": "cliente",
-      "userName": "Gesiel",
-      "password": "1234*"
+      "name": "Maria Mendez",
+      "type": "administrador",
+      "userName": "Maria",
+      "password": "789*"
+    }
+  ],
+  "favorites": [
+    {
+      "id": 1,
+      "name": "peanut Butter Bite Premium Butter Cookies 600 g",
+      "imagen": "../ecomerce/img/main/productos/1.png",
+      "price": 3500,
+      "weight": "600 g",
+      "discount": "true",
+      "valorDiscount": 0.1,
+      "totalDiscount": 3500,
+      "amount": 10,
+      "categories": [
+        "Biscuits & Snacks"
+      ]
     },
     {
-      "id": 4,
-      "name": "Angie Moreno",
-      "rol": "agente",
-      "userName": "AngieM",
-      "password": "1234*"
+      "id": 2,
+      "name": "Fantasy Crunchy Choco Chip Cookies",
+      "imagen": "../ecomerce/img/main/productos/2.png",
+      "price": 3000,
+      "weight": "500 grs",
+      "discount": "false",
+      "valorDiscount": 0.1,
+      "totalDiscount": 3000,
+      "amount": 10,
+      "categories": [
+        "Vegetables & Fruit"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Yumitos Chilli Sprinkled Potato Chips 100 g",
+      "imagen": "../ecomerce/img/main/productos/3.png",
+      "price": 2000,
+      "weight": "100 g",
+      "discount": "true",
+      "valorDiscount": 0.1,
+      "totalDiscount": 2000,
+      "amount": 10,
+      "categories": [
+        "Beverages"
+      ]
     }
-  ]
+  ],
+  "shoppingCart": [],
+  "filterCategory": []
 }

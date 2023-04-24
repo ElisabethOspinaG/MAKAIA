@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Poppins:ital,wght@0,700;1,400&family=Public+Sans:ital,wght@0,100;1,500&display=swap');
+
+* {
+  margin : 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Public Sans', sans-serif;
+}
+
+body{
+  color: black;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  border: 5px solid #000;
+  
+}
+
+/*-------------Estilos del header----------*/
+header{
+  
+  font-family: 'Public Sans', sans-serif;
+  font-size: 16px;
+}
+
+.seccion__header{
+  background: #0da487;
+  width: 100%;
+}
+
+.header_span-button{
+  width: 40px;
+  height: 40px;
+  
+}
+.header__navbar{
+  padding-right: 40px;
+  padding-left: 40px;
+}
+.header__logo {
+  width: 200px;
+  height: 50px;
+}
+.header__logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 36px;
+  gap: 25px;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+.header__links {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  align-items: center;
+}
+.header__links ul {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  
+  
+}
+.header__button {
+  
+  background-color: #0da487;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  width: 48px;
+  height: 48px;
+}
+
+.header__links ul {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+}
+.header__links a {
+  text-decoration: none;
+  color: #4B4D4F;
+  font-size: 14px;
+  font-weight: 500;
+}
+.header__links a:hover {
+  color: #2a41e8;
+}
