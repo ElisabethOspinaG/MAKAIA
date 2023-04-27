@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina de Fovoritos</title>
+    <title>Favorites</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -40,16 +40,16 @@
         <div class="text-bg-light d-flex justify-content-end col- 4 input-group">
           <span class="header_span-button">
             <figure class="figure">
-              <img class="figure-img img-fluid rounded" src="./img/header/banderas/colombia.png" alt="imgBandera" />
+              <img class="figure-img img-fluid rounded" src="../img/header/banderas/colombia.png" alt="imgBandera" />
             </figure>         
           </span>
           <button id= "btn_bandera" type="button" class="btn btn-outline-light dropdown-toggle btn-sm" data-bs-toggle="dropdown"
-          >Colombia</button>
+          >English</button>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="">Germani</a></li>
               <span class="input-group-text">
                 <figure class="figure">
-                <img class="figure-img img-fluid rounded" src="./img/header/banderas/germany.png" alt="imgMoneda" />
+                <img class="figure-img img-fluid rounded" src="../img/header/banderas/germany.png" alt="imgMoneda" />
             </span>
             </ul>
           <button type="button" class="btn btn-outline-light btn-sm" data-bs-toggle="dropdown"> PESOS </button>
@@ -63,7 +63,7 @@
       <div class="row d-flex">
         <div class="col-3 header__Search">
           <figure class="header__logo">
-              <img src="./img/logo/logoEcommerce.png" alt="logo">
+              <img src="../img/logo/logoEcommerce.png" alt="logo">
           </figure>
         </div>
         <div class="header__search col-6 d-flex ">
@@ -71,7 +71,7 @@
             <input class="header__input-search form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
             <button id="button_search" class="btn btn-warning d-flex" value="btn-warning " type="submit"> 
               <figure class="header_icon-button">
-                <img src="./img/header/icons/icon-search.png" alt="imgSearch" srcset="">
+                <img src="../img/header/icons/icon-search.png" alt="imgSearch" srcset="">
               </figure>
             </button>
           </form>
@@ -79,22 +79,22 @@
         <div class="col-3 d-flex justify-content-end ">
           <button id="button_phone" class="btn btn-outline-light btn-sm" value="btn-phone " type="submit"> 
             <figure class="header_icon-button">
-              <img src="./img/header/icons/icons-phone.png" alt="phone" srcset="">
+              <img src="../img/header/icons/icons-phone.png" alt="phone" srcset="">
             </figure>
           </button>
           <button id="button_star" class="btn btn-outline-light btn-sm" value="btn-star " type="submit"> 
             <figure class="header_icon-button">
-              <img src="./img/header/icons/icons-star.png" alt="star" srcset="">
+              <img src="../img/header/icons/icons-star.png" alt="star" srcset="">
             </figure>
           </button >
           <button id="button_car" class="btn btn-outline-light btn-sm" value="btn-car " type="submit"> 
             <figure class="header_icon-button">
-              <img src="./img/header/icons/icons-compra.png" alt="carShop" srcset="">
+              <img src="../img/header/icons/icons-compra.png" alt="carShop" srcset="">
             </figure>
             </button>
           <button id="button_usser" class="btn btn-outline-light btn-sm" value="btn-usser " type="submit"> 
             <figure class="header_icon-button">
-              <img src="./img/header/icons/iconscustomer.png" alt="loginUser" srcset="">
+              <img src="../img/header/icons/iconscustomer.png" alt="loginUser" srcset="">
             </figure>
           </button>
         </div>
@@ -131,7 +131,7 @@
           <button id="button__ofert" class="header__button-ofert">
             <span class="header_span-button">
               <figure class= "header_icon-button">
-                <img class="img__Button-ofert" src="./img/header/icons/icons-rayo.png" alt="icon_rayo">
+                <img class="img__Button-ofert" src="../img/header/icons/icons-rayo.png" alt="icon_rayo">
               </figure>
             </span>
           </button>
@@ -139,58 +139,14 @@
       </div>
     </section>
   </header>
-    <main class="main">
-      <section class="main_title">
-        <h1 class="bg-light">List Favorites</h1>
-      </section>
-        <section class="main__seccion-favorites"> 
-            <div class="main__container-favorites">
-              <img src="../img/main/" alt="">
-              <div class="main__container--imgDelete">
-
-              </div>
-              <div class="container text-center">
-                <img src=${product.imagen}
-                id="img_product--category"
-                class="card-img-top" 
-                data-card='cards' name=${product.id}
-                alt="${product.name}" />
-            </div>
-            <div id="favorits" class="btn-group">
-              <button type="button" class="btn btn-outline-light" data-card='eye' name=${product.id}>
-                  <img src="./img/main/icons/eye.svg" alt="eye">
-              </button>
-              <button type="button" class="btn btn-outline-light" data-card='cards' name=${product.id}>
-                  <img src="./img/main/icons/arrow-repeat.svg" alt="arrow">
-              </button>
-              <button type="button" class="btn btn-outline-light">
-                  <img data-id=${product.id} data-btn='btnfavorite' src="./img/main/icons/heart.svg" alt="arrow">
-              </button>
-            </div>
-            <div class="card-body">
-            <h5 class="card-title" data-card='cards' name=${product.id}>${product.name}</h5>
-                    <div class="d-flex justify-content-between w-50">
-                      <h5 class="card-title text-success"name=${product.id}>${product.totalDiscount} </h5>
-                      <h5 class="card-title text-black-50 bg-white text-decoration-line-through"name=${product.id}>${product.price}</h5>
-                    </div>
-                    <div class="d-flex w-75 justify-content-between">  
-                      <img class="img__category" src="./img/main/icons/icons-star.png" alt="btn-star">
-                      <img class="img__category" src="./img/main/icons/icons-star.png" alt="btn-star">
-                      <img class="img__category" src="./img/main/icons/icons-star.png" alt="btn-star">
-                      <img class="img__category" src="./img/main/icons/icons-star.png" alt="btn-star">
-                      <img class="img__category" src="./img/main/icons/icons-star.png" alt="btn-star">
-                      <span class= "card-title text-success">In stock</span>
-                    </div>
-                    <div class="d-flex w-75 justify-content-between bg-light p-2 w-100">
-                      <img name="deduct" src="./img/main/icons/dash-circle.svg" alt="deduct">
-                      <span id="addProduct">Add</span>
-                      <img name="add" src="./img/main/icons/plus-circle.svg" alt="add">
-                    </div>
-                  </div>
-                </div>
-
-            </div>
-        </section>
+  <main class="main">
+    <section class="main_title">
+      <h1 class="bg-light">List Favorites</h1>
+    </section>
+    <section class="main__seccion-favorites"> 
+      <div class="containerFavorites bg-green">
+        <!-- aca se pintan las card de favorites -->
+      </div>
     </main>
     <footer class="bd-footer py-4 py-md-5 mt-5 bg-body-tertiary">
         <section class="footer__seccion">

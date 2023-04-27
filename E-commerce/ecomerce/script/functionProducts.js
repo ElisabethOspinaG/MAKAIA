@@ -1,4 +1,4 @@
-// const URL_PRODUCTS= "http://localhost:3000/products";
+// export const URL_PRODUCTS= "http://localhost:3000/products";
 // //console.log("esta es a informacion en la URL PRODUCTOS: ",URL_PRODUCTS);
 
 // // construimos una funcion para obtener los datos de productos del Json

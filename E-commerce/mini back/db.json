@@ -11,7 +11,7 @@
       "totalDiscount": 3500,
       "amount": 10,
       "categories": [
-        "Biscuits & Snacks"
+        "Beverages"
       ]
     },
     {
@@ -48,15 +48,15 @@
       "id": 1,
       "name": "Elisabeth Ospina",
       "type": "administrador",
-      "userName": "Elisabeth",
-      "password": "1234*"
+      "userName": "Admin1",
+      "password": "Admin1*"
     },
     {
       "id": 2,
       "name": "Petito Perez",
       "type": "administrador",
-      "userName": "Pepito",
-      "password": "456*"
+      "userName": "Admin1",
+      "password": "Admin1*"
     },
     {
       "id": 3,
@@ -67,20 +67,6 @@
     }
   ],
   "favorites": [
-    {
-      "id": 1,
-      "name": "peanut Butter Bite Premium Butter Cookies 600 g",
-      "imagen": "../ecomerce/img/main/productos/1.png",
-      "price": 3500,
-      "weight": "600 g",
-      "discount": "true",
-      "valorDiscount": 0.1,
-      "totalDiscount": 3500,
-      "amount": 10,
-      "categories": [
-        "Biscuits & Snacks"
-      ]
-    },
     {
       "id": 2,
       "name": "Fantasy Crunchy Choco Chip Cookies",
